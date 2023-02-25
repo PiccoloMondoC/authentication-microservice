@@ -7,6 +7,6 @@
 &nbsp; echo "TOKEN: $t"<br>
 &nbsp; go run ./cmd/jwt-validate/ auth.ed.pub $t
 <h3>Encryption</h3>
-<p>&nbsp; To realize security best practices; the code here uses Ed25519 keys.
+<p>To realize security best practices; the code here uses Ed25519 keys.
 
-&nbsp; These are supported by Go but may not work as easily for other languages. However, nearly all the code<br> &nbsp; here is the same regardless of JWT singing method and nothing done here can't be done with other  <br> &nbsp; signing algorithms.</p>
+These are supported by Go but may not work as easily for other languages. However, nearly all the code here is the same regardless of JWT singing method and nothing done here can't be done with other signing algorithms.</p>

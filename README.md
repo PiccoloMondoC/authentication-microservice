@@ -3,7 +3,7 @@
 &nbsp; openssl genpkey -out auth.ed<br>
 &nbsp; openssl pkey -in auth.ed -pubout > auth.ed.pub
 <h3> try it with a local issuer</h3>
-&nbsp; t=$(go run ./cmd/jwt-issue auth.ed)<br>
+&nbsp; t=$(go run ./cmd/api auth.ed)<br>
 &nbsp; echo "TOKEN: $t"<br>
 &nbsp; go run ./cmd/jwt-validate/ auth.ed.pub $t
 <h3>Encryption</h3>
